@@ -1,9 +1,12 @@
+import cors from "cors";
 import express from "express";
 import { PORT } from "./config";
 import { router } from "./routes";
 import { errorHandler } from "./src/error-handler";
 
 const app = express();
+
+app.use(cors());
 
 app.use(router);
 
