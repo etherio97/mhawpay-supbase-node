@@ -1,10 +1,13 @@
 import cors from "cors";
 import express from "express";
+import * as helmet from "helmet";
 import { PORT } from "./config";
 import { router } from "./routes";
 import { errorHandler } from "./src/error-handler";
 
 const app = express();
+
+app.use(helmet());
 
 app.use(cors());
 
