@@ -1,6 +1,6 @@
 import cors from "cors";
 import express from "express";
-import * as helmet from "helmet";
+import helmet from "helmet";
 import { PORT } from "./config";
 import { router } from "./routes";
 import { errorHandler } from "./src/error-handler";
