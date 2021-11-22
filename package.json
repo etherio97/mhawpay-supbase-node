@@ -7,7 +7,7 @@
   "scripts": {
     "start": "npm run credential && npm run production",
     "credential": "node bin/get-credential.cjs",
-    "prodution": "node --es-module-specifier-resolution=node server.js",
+    "production": "node --es-module-specifier-resolution=node server.js",
     "dev": "nodemon --es-module-specifier-resolution=node -r dotenv/config server.js"
   },
   "keywords": [],
