@@ -7,7 +7,7 @@ if (process.env.NODE_ENV !== "production") {
 var fs = require("fs");
 var path = require("path");
 var axios = require("axios").default;
-var serviceAccount = path.join(path.dirname(__dirname), "serviceAccount.json");
+var serviceAccount = path.join(process.cwd(), "serviceAccount.json");
 var credentialUrl = process.env.FIREBASE_SERVICE_ACCOUNT;
 
 if (fs.existsSync(serviceAccount)) {
