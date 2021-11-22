@@ -1,0 +1,1 @@
+web: node bin/git-credential.cjs && npm start
