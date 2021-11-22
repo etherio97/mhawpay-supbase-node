@@ -1,1 +1,1 @@
-web: ./bin/git-credential.cjs && npm start
+web: npm start
